@@ -18,3 +18,19 @@ The table below gives an overview of how messages can be encoded:
 ### Prerequisites
 - GCC compiler
 - Standard C library
+
+## To Compile and Use the Project
+Compiling: run "make all"
+Usage: run ./myprogram
+
+## Architecture
+Main Components:
+
+cli.c/h: Handles the command line interface interactions.
+message_encode.c/h: Contains the core logic for encoding and decoding messages.
+main.c: Entry point of the application which sets up the environment and initiates the CLI.
+Data Flow:
+
+The user inputs a message through the CLI.
+message_encode.c processes the input to either encode or decode the message.
+The result is output to the user through the CLI.
